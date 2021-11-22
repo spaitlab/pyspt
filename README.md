@@ -1,4 +1,4 @@
-# ThinkDSP Zhiguo Zhou GitHub 2021.11.22
+# ThinkDSP Zhiguo Zhou GitHub readme.md 2021.11.22
 
 LaTeX source and Python code for _Think DSP: Digital Signal Processing in Python_, by Allen B. Downey.
 
