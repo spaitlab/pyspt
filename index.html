@@ -2,18 +2,12 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
 
-    <!-- The loading of KaTeX is deferred to speed up page rendering -->
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
-
-    <!-- To automatically render math in text elements, include the auto-render extension: -->
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
-        onload="renderMathInElement(document.body);"></script>
-<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
-.mac-os-11 { --title-bar-height:28px; }
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
@@ -29,8 +23,6 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
 @media screen and (max-width: 500px) {
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   #write { padding-left: 20px; padding-right: 20px; }
-  .CodeMirror-sizer { margin-left: 0px !important; }
-  .CodeMirror-gutters { display: none !important; }
 }
 #write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
@@ -58,7 +50,7 @@ sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inh
 #write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
 figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
 figure > table { margin: 0px; }
-tr { break-inside: avoid; break-after: auto; }
+thead, tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
 table.md-table td { min-width: 32px; }
@@ -80,6 +72,7 @@ div.hr:focus { cursor: none; }
 #write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
 .md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
 .CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
 .footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
 .footnotes + .footnotes { margin-top: 0px; }
 .md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
@@ -94,12 +87,14 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 #write .footnote-line { white-space: pre-wrap; }
 @media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
-  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
   .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
@@ -137,6 +132,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 }
 a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
 .footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
 .md-attr { display: none; }
 .md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
@@ -167,7 +163,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .md-fences-advanced:not(.md-focus) { background: inherit; }
 .typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
 .typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
-.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
 .typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
 @media screen and (max-width: 1024px) {
   .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
@@ -175,7 +171,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 @media screen and (max-width: 800px) {
   .typora-export-sidebar { display: none; }
 }
-.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
 .outline-content ul { margin-top: 0px; margin-bottom: 0px; }
 .outline-content strong { font-weight: 400; }
 .outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
@@ -206,6 +202,21 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
 .typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
 .md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
 
 
 :root {
@@ -213,7 +224,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
     --control-text-color: #777;
 }
 
-@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
 
 /* open-sans-regular - latin-ext_latin */
   /* open-sans-italic - latin-ext_latin */
@@ -464,11 +475,8 @@ code {
     html {
         font-size: 13px;
     }
-    table,
     pre {
         page-break-inside: avoid;
-    }
-    pre {
         word-wrap: break-word;
     }
 }
@@ -564,6 +572,10 @@ header, .context-menu, .megamenu-content, footer{
     background-color: var(--side-bar-bg-color);
 }
 
+.mac-os #write{
+    caret-color: AccentColor;
+}
+
 .md-lang {
     color: #b4654d;
 }
@@ -600,7 +612,6 @@ header, .context-menu, .megamenu-content, footer{
 </style><title>README</title>
 </head>
 <body class='typora-export os-windows'><div class='typora-export-content'>
-<div id='write'  class=''><h1 id='python-信号处理工具箱---pyspt'><span>Python 信号处理工具箱 - PySPT</span></h1><h2 id='python-signal-processing-toolbox'><span>Python Signal Processing Toolbox</span></h2><blockquote><p><span>信号处理是从信号抽取出有用信息的过程，包括：提取、变换、分析、综合等处理过程。随着数字计算机的飞速发展，信号处理的理论和方法也得以发展，出现了不受物理制约的纯数学的加工，即算法，并确立了信号处理的领域。</span></p></blockquote><hr /><h3 id='matlab'><span>MATLAB</span></h3><blockquote><p><span>MATLAB是由美国Math Works公司发布的主要面对科学计算、可视化以及交互式程序设计的高科技计算环境。它将数值分析、矩阵计算、科学数据可视化以及非线性动态系统的建模和仿真等诸多强大功能集成在一个易于使用的视窗环境中，为科学研究、工程设计以及必须进行有效数值计算的众多科学领域提供了一种全面的解决方案。近20年来，由MathWorks公司开发的MATLAB软件，被广泛的应用到了信号处理的课程教学和实验中。</span></p></blockquote><hr /><h3 id='python'><span>Python</span></h3><blockquote><p><span>随着开源软件的发展，推动了行业创新和科技术进步。Python语言以其简洁性、易读性以及可扩展性，用于科学计算研究日益增多。Python标准库命名接口清晰、文档良好，很容易学习和使用。Python社区提供了大量的第三方模块，使用方式与标准库类似。它们的功能无所不包，覆盖科学计算、Web开发、数据库接口、图形系统多个领域，并且大多成熟而稳定。SciPy是一个开源的Python算法库和数学工具包，基于Numpy科学计算库，用于数学、科学、工程学等领域。SciPy 包含的模块有最优化、线性代数、积分、插值、特殊函数、快速傅里叶变换、信号处理和图像处理、常微分方程求解和其他科学与工程中常用的计算。自 2001 年首次发布以来，SciPy 已经成为Python语言中科学算法的行业标准。目前除了MATLAB的一些专业性很强的工具箱还无法被替代之外，MATLAB的大部分常用功能都可以在Python世界中找到相应的扩展库。Python完全免费，众多开源的科学计算库都提供了Python的调用接口。用户可以在任何计算机上免费安装Python及其绝大多数扩展库。</span></p></blockquote><hr /><h3 id='pyspt'><span>PySPT</span></h3><blockquote><p><span>本仓库参考Matlab Signal Processing Toolbox的体系架构，及其函数和案例组织方式，对应整理并编写了基于Python的信号处理工具箱（Python Signal Processing Toolbox，简称PySPT）函数和案例。</span>
-<span>本书共分六章：</span></p></blockquote><ul><li><span>第一章是工具箱概述，介绍了Python专用的科学计算扩展库、Matlab信号处理工具箱，和Python的信号处理工具箱架构。</span></li><li><span>第二章是信号生成和预处理，工具箱提供的函数可对信号进行创建、重采样、平滑、去噪和去趋势处理，为进一步分析做好准备。</span></li><li><span>第三章是测量和特征提取，提供的函数可用于测量信号的时域和频域常见不同特征。</span></li><li><span>第四章是变换、相关性和建模，工具箱提供的函数可用于计算信号的相关性、卷积和变换的函数。</span></li><li><span>第五章是数字和模拟滤波器，工具箱提供的函数可用于设计、分析和实现各种数字 FIR 和 IIR 滤波器。</span></li><li><span>第六章是频谱分析，工具箱提供提供一系列频谱分析函数，用于表征信号的频率成分。</span></li></ul><blockquote><p><span>函数和案例都配以对应Matlab/Python代码为示例，引导读者通过编程的方式来准确地理解信号处理的相关知识及其应用。</span></p></blockquote><hr /><p><span>周治国</span></p><ul><li><a href='mailto:zhiguozhou@bit.edu.cn' target='_blank' class='url'>zhiguozhou@bit.edu.cn</a></li><li><span>北京理工大学</span></li><li><span>集成电路与电子学院</span></li><li><span>信号与图像处理研究所</span></li></ul><p><span> 课程信息：</span></p><ul><li><span>0500121-《信号处理仿真与应用》-2021-2022-2班</span></li></ul></div></div>
+<div id='write'  class=' first-line-indent'><h1 id='python-信号处理工具箱---pyspt'><span>Python 信号处理工具箱 - PySPT</span></h1><h2 id='python-signal-processing-toolbox'><span>Python Signal Processing Toolbox</span></h2><blockquote><p><span>信号处理是从信号抽取出有用信息的过程，包括：提取、变换、分析、综合等处理过程。随着数字计算机的飞速发展，信号处理的理论和方法也得以发展，出现了不受物理制约的纯数学的加工，即算法，并确立了信号处理的领域。</span></p></blockquote><hr /><h3 id='matlab'><span>MATLAB</span></h3><blockquote><p><span>MATLAB是由美国Math Works公司发布的主要面对科学计算、可视化以及交互式程序设计的高科技计算环境。它将数值分析、矩阵计算、科学数据可视化以及非线性动态系统的建模和仿真等诸多强大功能集成在一个易于使用的视窗环境中，为科学研究、工程设计以及必须进行有效数值计算的众多科学领域提供了一种全面的解决方案。近20年来，由MathWorks公司开发的MATLAB软件，被广泛的应用到了信号处理的课程教学和实验中。</span></p></blockquote><hr /><h3 id='python'><span>Python</span></h3><blockquote><p><span>随着开源软件的发展，推动了行业创新和科技术进步。Python语言以其简洁性、易读性以及可扩展性，用于科学计算研究日益增多。Python标准库命名接口清晰、文档良好，很容易学习和使用。Python社区提供了大量的第三方模块，使用方式与标准库类似。它们的功能无所不包，覆盖科学计算、Web开发、数据库接口、图形系统多个领域，并且大多成熟而稳定。SciPy是一个开源的Python算法库和数学工具包，基于Numpy科学计算库，用于数学、科学、工程学等领域。SciPy 包含的模块有最优化、线性代数、积分、插值、特殊函数、快速傅里叶变换、信号处理和图像处理、常微分方程求解和其他科学与工程中常用的计算。自 2001 年首次发布以来，SciPy 已经成为Python语言中科学算法的行业标准。目前除了MATLAB的一些专业性很强的工具箱还无法被替代之外，MATLAB的大部分常用功能都可以在Python世界中找到相应的扩展库。Python完全免费，众多开源的科学计算库都提供了Python的调用接口。用户可以在任何计算机上免费安装Python及其绝大多数扩展库。</span></p></blockquote><hr /><h3 id='pyspt'><span>PySPT</span></h3><blockquote><p><span>本仓库参考Matlab Signal Processing Toolbox的体系架构，及其函数和案例组织方式，对应整理并编写了基于Python的信号处理工具箱（Python Signal Processing Toolbox，简称PySPT）函数和案例。</span></p></blockquote><h3 id='书籍'><span>书籍</span></h3><p><img src="page.jpg" referrerpolicy="no-referrer" alt="alt text"></p><blockquote><p><span>本书共分六章：</span></p></blockquote><ul><li><p><span>第一章是工具箱概述，介绍了Python专用的科学计算扩展库、Matlab信号处理工具箱，和Python的信号处理工具箱架构。</span></p></li><li><p><span>第二章是信号生成和预处理，工具箱提供的函数可对信号进行创建、重采样、平滑、去噪和去趋势处理，为进一步分析做好准备。</span></p></li><li><p><span>第三章是测量和特征提取，提供的函数可用于测量信号的时域和频域常见不同特征。</span></p></li><li><p><span>第四章是变换、相关性和建模，工具箱提供的函数可用于计算信号的相关性、卷积和变换的函数。</span></p></li><li><p><span>第五章是数字和模拟滤波器，工具箱提供的函数可用于设计、分析和实现各种数字 FIR 和 IIR 滤波器。</span></p></li><li><p><span>第六章是频谱分析，工具箱提供提供一系列频谱分析函数，用于表征信号的频率成分。</span></p></li></ul><blockquote><p><span>函数和案例都配以对应Matlab/Python代码为示例，引导读者通过编程的方式来准确地理解信号处理的相关知识及其应用。</span></p></blockquote><h3 id='课件目录'><span>课件目录</span></h3><p><a href='#_Toc14671'><span>第1章 信号处理概况</span></a></p><p><a href='#_Toc14876'><span>第2章 Python编程基础</span></a></p><p><a href='#_Toc11226'><span>第3章 信号生成和预处理</span></a></p><p><a href='#_Toc13442'><span>第4章 测量和特征提取</span></a></p><p><a href='#_Toc1702'><span>第5章 变换、相关性和建模</span></a></p><p><a href='#_Toc17058'><span>第6章 数字和模拟滤波器</span></a></p><p><a href='#_Toc17058'><span>第7章 频谱分析</span></a></p><p><a href='#_Toc17058'><span>第8章 借助大语言模型实现信号处理</span></a></p><hr /><p><span>周治国</span></p><ul><li><p><a href='mailto:zhiguozhou@bit.edu.cn' target='_blank' class='url'>zhiguozhou@bit.edu.cn</a></p></li><li><p><span>北京理工大学</span></p></li><li><p><span>集成电路与电子学院</span></p></li><li><p><span>信号与图像处理研究所</span></p></li></ul><p><span> 课程信息：</span></p><ul><li><p><span>0500121-《信号处理仿真与应用》-2021-2022-2班</span></p></li><li><p><span>0500121-《信号处理仿真与应用》-2023-2024-2班</span></p></li></ul></div></div>
 </body>
 </html>
