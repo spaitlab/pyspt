@@ -1,128 +1,128 @@
-# ĞÅºÅ´¦Àí·ÂÕæÓëÓ¦ÓÃ - Êı×ÖºÍÄ£ÄâÂË²¨Æ÷ - Êı×ÖÂË²¨Æ÷Éè¼Æ
+# ä¿¡å·å¤„ç†ä»¿çœŸä¸åº”ç”¨ - æ•°å­—å’Œæ¨¡æ‹Ÿæ»¤æ³¢å™¨ - æ•°å­—æ»¤æ³¢å™¨è®¾è®¡
 
-## MATLABº¯ÊıÃèÊö£ºrcosdesign
+## MATLABå‡½æ•°æè¿°ï¼šrcosdesign
 
-º¯ÊıÀ´Ô´£º[MATLAB rcosdesign](https://ww2.mathworks.cn/help/signal/ref/rcosdesign.html)
+å‡½æ•°æ¥æºï¼š[MATLAB rcosdesign](https://ww2.mathworks.cn/help/signal/ref/rcosdesign.html)
 
-### Óï·¨
+### è¯­æ³•
 
 b = rcosdesign(beta,span,sps)
 
 b = rcosdesign(beta,span,sps,shape)
 
-### ËµÃ÷
+### è¯´æ˜
 
-b = rcosdesign(beta,span,sps)·µ»ØÏµÊıb£¬¸ÃÏµÊıb¶ÔÓ¦ÓÚ¾ßÓĞÓÉbetaÖ¸¶¨µÄ¹ö½µÒò×ÓµÄÆ½·½¸ùÌáÉıÓàÏÒFIRÂË²¨Æ÷¡£ÂË²¨Æ÷±»½Ø¶ÏÎª'span'·ûºÅ£¬Ã¿¸ö·ûºÅÖÜÆÚ°üº¬'sps'¸öÑù±¾¡£ÂË²¨Æ÷µÄ½×Êı'sps*span'±ØĞëÊÇÅ¼Êı¡£ÂË²¨Æ÷ÄÜÁ¿Îª1¡£
+b = rcosdesign(beta,span,sps)è¿”å›ç³»æ•°bï¼Œè¯¥ç³»æ•°bå¯¹åº”äºå…·æœ‰ç”±betaæŒ‡å®šçš„æ»šé™å› å­çš„å¹³æ–¹æ ¹æå‡ä½™å¼¦FIRæ»¤æ³¢å™¨ã€‚æ»¤æ³¢å™¨è¢«æˆªæ–­ä¸º'span'ç¬¦å·ï¼Œæ¯ä¸ªç¬¦å·å‘¨æœŸåŒ…å«'sps'ä¸ªæ ·æœ¬ã€‚æ»¤æ³¢å™¨çš„é˜¶æ•°'sps*span'å¿…é¡»æ˜¯å¶æ•°ã€‚æ»¤æ³¢å™¨èƒ½é‡ä¸º1ã€‚
 
-b = rcosdesign(beta,span,sps,shape)µ±Äã½«shapeÉèÖÃÎª¡°sqrt¡±Ê±·µ»ØÒ»¸öÆ½·½¸ùÍ¹ÆğÓàÏÒÂË²¨Æ÷£¬µ±Äã½«'shape'ÉèÖÃÎª¡°normal¡±Ê±·µ»ØÒ»¸öÕı³£Í¹ÆğÓàÏÒFIRÂË²¨Æ÷¡£
+b = rcosdesign(beta,span,sps,shape)å½“ä½ å°†shapeè®¾ç½®ä¸ºâ€œsqrtâ€æ—¶è¿”å›ä¸€ä¸ªå¹³æ–¹æ ¹å‡¸èµ·ä½™å¼¦æ»¤æ³¢å™¨ï¼Œå½“ä½ å°†'shape'è®¾ç½®ä¸ºâ€œnormalâ€æ—¶è¿”å›ä¸€ä¸ªæ­£å¸¸å‡¸èµ·ä½™å¼¦FIRæ»¤æ³¢å™¨ã€‚
 
-### ÊäÈë²ÎÊı
+### è¾“å…¥å‚æ•°
 
-- beta ¡ª ¹ö½µÏµÊı
+- beta â€” æ»šé™ç³»æ•°
   
-  Êµ·Ç¸º±êÁ¿
+  å®éè´Ÿæ ‡é‡
   
-  ¹ö½µÏµÊı£¬±»Ö¸¶¨Îª²»´óÓÚ1µÄÊµ·Ç¸º±êÁ¿¡£¹ö½µÒò×Ó¾ö¶¨ÁËÂË²¨Æ÷µÄ¶àÓà´ø¿í¡£Áã¹ö½µ¶ÔÓ¦ÓÚ¾ØĞÎÂË²¨Æ÷£¬µ¥Î»¹ö½µ¶ÔÓ¦ÓÚ´¿ÌáÉıÓàÏÒ¡£
+  æ»šé™ç³»æ•°ï¼Œè¢«æŒ‡å®šä¸ºä¸å¤§äº1çš„å®éè´Ÿæ ‡é‡ã€‚æ»šé™å› å­å†³å®šäº†æ»¤æ³¢å™¨çš„å¤šä½™å¸¦å®½ã€‚é›¶æ»šé™å¯¹åº”äºçŸ©å½¢æ»¤æ³¢å™¨ï¼Œå•ä½æ»šé™å¯¹åº”äºçº¯æå‡ä½™å¼¦ã€‚
   
-  Êı¾İÀàĞÍ: single | double
+  æ•°æ®ç±»å‹: single | double
 
-- span -·ûºÅÊı
+- span -ç¬¦å·æ•°
 
-    ÕıÕûÊı±êÁ¿
+    æ­£æ•´æ•°æ ‡é‡
 
-    ·ûºÅÊı£¬Ö¸¶¨ÎªÕıÕûÊı±êÁ¿¡£
+    ç¬¦å·æ•°ï¼ŒæŒ‡å®šä¸ºæ­£æ•´æ•°æ ‡é‡ã€‚
 
-    Êı¾İÀàĞÍ: single | double | int8 | int16 | int32 | int64 | uint8 | uint16 | uint32 | uint64
+    æ•°æ®ç±»å‹: single | double | int8 | int16 | int32 | int64 | uint8 | uint16 | uint32 | uint64
 
-- sps -Ã¿¸ö·ûºÅµÄÑù±¾Êı
+- sps -æ¯ä¸ªç¬¦å·çš„æ ·æœ¬æ•°
   
-    ÕıÕûÊı±êÁ¿
+    æ­£æ•´æ•°æ ‡é‡
 
-    Ã¿¸ö·ûºÅµÄÑù±¾Êı(¹ı²ÉÑùÒò×Ó)£¬Ö¸¶¨ÎªÕıÕûÊı±êÁ¿¡£
+    æ¯ä¸ªç¬¦å·çš„æ ·æœ¬æ•°(è¿‡é‡‡æ ·å› å­)ï¼ŒæŒ‡å®šä¸ºæ­£æ•´æ•°æ ‡é‡ã€‚
 
-    Êı¾İÀàĞÍ: single | double | int8 | int16 | int32 | int64 | uint8 | uint16 | uint32 | uint64
+    æ•°æ®ç±»å‹: single | double | int8 | int16 | int32 | int64 | uint8 | uint16 | uint32 | uint64
 
-- shape -ÉıÓàÏÒ´°µÄĞÎ×´
+- shape -å‡ä½™å¼¦çª—çš„å½¢çŠ¶
   
-    "sqrt"(Ä¬ÈÏ)| "normal"
+    "sqrt"(é»˜è®¤)| "normal"
 
-    ÉıÓàÏÒ´°µÄĞÎ×´£¬Ö¸¶¨Îª¡°normal¡±»ò¡°sqrt¡±¡£
+    å‡ä½™å¼¦çª—çš„å½¢çŠ¶ï¼ŒæŒ‡å®šä¸ºâ€œnormalâ€æˆ–â€œsqrtâ€ã€‚
 
 
-### Êä³ö²ÎÁ¿
+### è¾“å‡ºå‚é‡
 
-- b - FIRÂË²¨Æ÷ÏµÊı
+- b - FIRæ»¤æ³¢å™¨ç³»æ•°
 
-    ĞĞÏòÁ¿
+    è¡Œå‘é‡
 
-    ÉıÓàÏÒÂË²¨Æ÷ÏµÊı£¬×÷ÎªĞĞÏòÁ¿·µ»Ø¡£
+    å‡ä½™å¼¦æ»¤æ³¢å™¨ç³»æ•°ï¼Œä½œä¸ºè¡Œå‘é‡è¿”å›ã€‚
 
-    Êı¾İÀàĞÍ: double
+    æ•°æ®ç±»å‹: double
 
-## Pythonº¯ÊıÃèÊö£ºrcosfilterºÍrrcosfilter
+## Pythonå‡½æ•°æè¿°ï¼šrcosfilterå’Œrrcosfilter
 
-º¯ÊıÀ´Ô´£º
+å‡½æ•°æ¥æºï¼š
 
 [commpy.filters.rcosfilter](https://commpy.readthedocs.io/en/latest/generated/commpy.filters.rcosfilter.html)
 
 [commpy.filters.rrcosfilter](https://commpy.readthedocs.io/en/latest/generated/commpy.filters.rrcosfilter.html)
 
-### Óï·¨
+### è¯­æ³•
 
 
-### º¯Êırcosfilter
+### å‡½æ•°rcosfilter
 
 rcosfilter(N, alpha, Ts, Fs)
 
-²úÉúÒ»¸öÉÏÉıÓàÏÒ(RC)ÂË²¨Æ÷(FIR)Âö³åÏìÓ¦¡£
+äº§ç”Ÿä¸€ä¸ªä¸Šå‡ä½™å¼¦(RC)æ»¤æ³¢å™¨(FIR)è„‰å†²å“åº”ã€‚
 
-#### ²ÎÊı
+#### å‚æ•°
 
-- `N`: (int)  Ñù±¾ÖĞÂË²¨Æ÷µÄ³¤¶È¡£
+- `N`: (int)  æ ·æœ¬ä¸­æ»¤æ³¢å™¨çš„é•¿åº¦ã€‚
 
-- `alpha`:  (float)   ¹ö½µÒò×Ó(ÓĞĞ§ÖµÎª[0,1])
+- `alpha`:  (float)   æ»šé™å› å­(æœ‰æ•ˆå€¼ä¸º[0,1])
 
 - `Ts`: (float)
-    ·ûºÅÖÜÆÚ£¬µ¥Î»ÎªÃë
+    ç¬¦å·å‘¨æœŸï¼Œå•ä½ä¸ºç§’
   
-- `Fs`: (float) ²ÉÑùÂÊ(Hz)
+- `Fs`: (float) é‡‡æ ·ç‡(Hz)
   
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-- `time_idx`: 1-D ndarray (float)   °üº¬Âö³åÏìÓ¦µÄÊ±¼äÖ¸Êı(ÒÔÃëÎªµ¥Î»)µÄÊı×é¡£
-- `h_rc`: 1-D ndarray (float)   ÉÏÉıÓàÏÒÂË²¨Æ÷µÄÂö³åÏìÓ¦¡£
+- `time_idx`: 1-D ndarray (float)   åŒ…å«è„‰å†²å“åº”çš„æ—¶é—´æŒ‡æ•°(ä»¥ç§’ä¸ºå•ä½)çš„æ•°ç»„ã€‚
+- `h_rc`: 1-D ndarray (float)   ä¸Šå‡ä½™å¼¦æ»¤æ³¢å™¨çš„è„‰å†²å“åº”ã€‚
 
-### º¯Êırrcosfilter
+### å‡½æ•°rrcosfilter
 
 rrcosfilter(N, alpha, Ts, Fs)
 
-²úÉúÒ»¸ö¸ùÉıÓàÏÒ(RRC)ÂË²¨Æ÷(FIR)Âö³åÏìÓ¦¡£
+äº§ç”Ÿä¸€ä¸ªæ ¹å‡ä½™å¼¦(RRC)æ»¤æ³¢å™¨(FIR)è„‰å†²å“åº”ã€‚
 
-#### ²ÎÊı
+#### å‚æ•°
 
-- `N`: int  Ñù±¾ÖĞÂË²¨Æ÷µÄ³¤¶È¡£
+- `N`: int  æ ·æœ¬ä¸­æ»¤æ³¢å™¨çš„é•¿åº¦ã€‚
 
-- `alpha`:  float   ¹ö½µÒò×Ó(ÓĞĞ§ÖµÎª[0,1])
+- `alpha`:  float   æ»šé™å› å­(æœ‰æ•ˆå€¼ä¸º[0,1])
 
-- `Ts`: float   ·ûºÅÖÜÆÚ£¬µ¥Î»ÎªÃë
+- `Ts`: float   ç¬¦å·å‘¨æœŸï¼Œå•ä½ä¸ºç§’
   
-- `Fs`: float   ²ÉÑùÂÊ(Hz)
+- `Fs`: float   é‡‡æ ·ç‡(Hz)
   
-#### ·µ»ØÖµ
+#### è¿”å›å€¼
 
-- `time_idx`: 1-D ndarray (float)   °üº¬Âö³åÏìÓ¦µÄÊ±¼äÖ¸Êı(ÒÔÃëÎªµ¥Î»)µÄÊı×é¡£
-- `h_rc`: 1-D ndarray (float)   ¸ùÉıÓàÏÒÂË²¨Æ÷µÄÂö³åÏìÓ¦¡£
+- `time_idx`: 1-D ndarray (float)   åŒ…å«è„‰å†²å“åº”çš„æ—¶é—´æŒ‡æ•°(ä»¥ç§’ä¸ºå•ä½)çš„æ•°ç»„ã€‚
+- `h_rc`: 1-D ndarray (float)   æ ¹å‡ä½™å¼¦æ»¤æ³¢å™¨çš„è„‰å†²å“åº”ã€‚
 
-## Prompt 1 £º Ó¦ÓÃ Python rrcosfilter º¯ÊıÍê³É Matlab º¯ÊıÊ¾ÀıÉè¼ÆÆ½·½¸ùÉıÓàÏÒÂË²¨Æ÷
+## Prompt 1 ï¼š åº”ç”¨ Python rrcosfilter å‡½æ•°å®Œæˆ Matlab å‡½æ•°ç¤ºä¾‹è®¾è®¡å¹³æ–¹æ ¹å‡ä½™å¼¦æ»¤æ³¢å™¨
 
-²Î¿¼ÏÂÃæMATLAB´úÂërcosdesignº¯ÊıÀı×Ó£º
+å‚è€ƒä¸‹é¢MATLABä»£ç rcosdesignå‡½æ•°ä¾‹å­ï¼š
 ```
 h = rcosdesign(0.25,6,4);
 mx = max(abs(h-rcosdesign(0.25,6,4,"sqrt")))
 impz(h)
 ```
 
-ºÍPythonÖĞ¿âcommpyµÄº¯Êı:rrcosfilter(N, alpha, Ts, Fs)£º
+å’ŒPythonä¸­åº“commpyçš„å‡½æ•°:rrcosfilter(N, alpha, Ts, Fs)ï¼š
 ```
 def rrcosfilter(N, alpha, Ts, Fs):
     """
@@ -175,9 +175,9 @@ def rrcosfilter(N, alpha, Ts, Fs):
 
     return time_idx, h_rrc
 ```
-ÇëÊ¹ÓÃPythonµÄcommpy¿âÖĞµÄrrcosfilterº¯Êı£¬Íê³ÉMatlabÈí¼şrcosdesignº¯ÊıµÄÊ¾Àı£¬Íê³ÉMATLABº¯ÊıÊ¾Àıµ½Python³ÌĞòÊ¾ÀıµÄ¶ÔÓ¦¡£
+è¯·ä½¿ç”¨Pythonçš„commpyåº“ä¸­çš„rrcosfilterå‡½æ•°ï¼Œå®ŒæˆMatlabè½¯ä»¶rcosdesignå‡½æ•°çš„ç¤ºä¾‹ï¼Œå®ŒæˆMATLABå‡½æ•°ç¤ºä¾‹åˆ°Pythonç¨‹åºç¤ºä¾‹çš„å¯¹åº”ã€‚
 
-### LLM Éú³É £º Python rrcosfilter º¯ÊıÊ¾Àı
+### LLM ç”Ÿæˆ ï¼š Python rrcosfilter å‡½æ•°ç¤ºä¾‹
 
 #### Python
 
@@ -187,7 +187,7 @@ def rrcosfilter(N, alpha, Ts, Fs):
 
 	  
 
-	# ¶¨Òårrcosfilterº¯Êı£¨Èç¹ûÉĞÎ´¶¨Òå£©  
+	# å®šä¹‰rrcosfilterå‡½æ•°ï¼ˆå¦‚æœå°šæœªå®šä¹‰ï¼‰  
 
 	def rrcosfilter(N, alpha, Ts, Fs):  
 
@@ -244,17 +244,17 @@ def rrcosfilter(N, alpha, Ts, Fs):
 
 	  
 
-	# ²ÎÊıÉèÖÃ£¬Ä£·ÂMATLABµÄrcosdesignº¯Êı  
+	# å‚æ•°è®¾ç½®ï¼Œæ¨¡ä»¿MATLABçš„rcosdesignå‡½æ•°  
 
-	beta = 0.25  # ¹ö½µÒò×Ó  
+	beta = 0.25  # æ»šé™å› å­  
 
-	span = 6     # ÂË²¨Æ÷¿ç¶È£¨ÔÚ·ûºÅÊ±¼äÄÚµÄ±¶Êı£©  
+	span = 6     # æ»¤æ³¢å™¨è·¨åº¦ï¼ˆåœ¨ç¬¦å·æ—¶é—´å†…çš„å€æ•°ï¼‰  
 
-	num_taps = 4 # ÂË²¨Æ÷ÏµÊıÊıÁ¿  
+	num_taps = 4 # æ»¤æ³¢å™¨ç³»æ•°æ•°é‡  
 
 	  
 
-	# ·ûºÅÖÜÆÚºÍ²ÉÑùÂÊ  
+	# ç¬¦å·å‘¨æœŸå’Œé‡‡æ ·ç‡  
 
 	Ts = 1.0  
 
@@ -262,27 +262,27 @@ def rrcosfilter(N, alpha, Ts, Fs):
 
 	  
 
-	# ¼ÆËãÂË²¨Æ÷³¤¶È  
+	# è®¡ç®—æ»¤æ³¢å™¨é•¿åº¦  
 
 	N = span * num_taps  
 
 	  
 
-	# Éú³É¸ùÉıÓàÏÒÂË²¨Æ÷µÄÂö³åÏìÓ¦  
+	# ç”Ÿæˆæ ¹å‡ä½™å¼¦æ»¤æ³¢å™¨çš„è„‰å†²å“åº”  
 
 	time_idx, h_rrc = rrcosfilter(N, beta, Ts, Fs)  
 
 	  
 
-	# ÒòÎªPythonº¯ÊıÖ±½Ó·µ»Ø¸ùÉıÓàÏÒÂË²¨Æ÷£¬²»ĞèÒªÏñMATLABÄÇÑùÖ¸¶¨"sqrt"  
+	# å› ä¸ºPythonå‡½æ•°ç›´æ¥è¿”å›æ ¹å‡ä½™å¼¦æ»¤æ³¢å™¨ï¼Œä¸éœ€è¦åƒMATLABé‚£æ ·æŒ‡å®š"sqrt"  
 
-	# ËùÒÔÎÒÃÇÖ±½Ó±È½Ïh_rrcºÍÖØĞÂ¼ÆËãµÄh_rrc_recomputed  
+	# æ‰€ä»¥æˆ‘ä»¬ç›´æ¥æ¯”è¾ƒh_rrcå’Œé‡æ–°è®¡ç®—çš„h_rrc_recomputed  
 
 	h_rrc_recomputed = rrcosfilter(N, beta, Ts, Fs)[1]  
 
 	  
 
-	# ¼ÆËã×î´ó¾ø¶Ô²îÒì  
+	# è®¡ç®—æœ€å¤§ç»å¯¹å·®å¼‚  
 
 	mx = np.max(np.abs(h_rrc - h_rrc_recomputed))  
 
@@ -290,7 +290,7 @@ def rrcosfilter(N, alpha, Ts, Fs):
 
 	  
 
-	# »æÖÆÂË²¨Æ÷µÄÂö³åÏìÓ¦  
+	# ç»˜åˆ¶æ»¤æ³¢å™¨çš„è„‰å†²å“åº”  
 
 	plt.stem(time_idx, h_rrc, use_line_collection=True)  
 
@@ -304,13 +304,13 @@ def rrcosfilter(N, alpha, Ts, Fs):
 
 	plt.show()
 
-×¢Òâ£¬ÎÒÃÇÃ»ÓĞÏñMATLABµÄrcosdesignº¯ÊıÄÇÑùÌá¹©Ò»¸öÑ¡ÏîÀ´Éú³ÉÆ½·½¸ùÂË²¨Æ÷£¬ÒòÎªrrcosfilterº¯Êı±¾Éí¾ÍÊÇÎªÉú³É¸ùÉıÓàÏÒÂË²¨Æ÷Éè¼ÆµÄ¡£Òò´Ë£¬ÎÒÃÇÖ±½Ó±È½ÏÁËÁ½´Îµ÷ÓÃrrcosfilterº¯ÊıµÃµ½µÄÂö³åÏìÓ¦£¬²¢¼ÆËãÁËËüÃÇÖ®¼äµÄ×î´ó¾ø¶Ô²îÒì¡£
+æ³¨æ„ï¼Œæˆ‘ä»¬æ²¡æœ‰åƒMATLABçš„rcosdesignå‡½æ•°é‚£æ ·æä¾›ä¸€ä¸ªé€‰é¡¹æ¥ç”Ÿæˆå¹³æ–¹æ ¹æ»¤æ³¢å™¨ï¼Œå› ä¸ºrrcosfilterå‡½æ•°æœ¬èº«å°±æ˜¯ä¸ºç”Ÿæˆæ ¹å‡ä½™å¼¦æ»¤æ³¢å™¨è®¾è®¡çš„ã€‚å› æ­¤ï¼Œæˆ‘ä»¬ç›´æ¥æ¯”è¾ƒäº†ä¸¤æ¬¡è°ƒç”¨rrcosfilterå‡½æ•°å¾—åˆ°çš„è„‰å†²å“åº”ï¼Œå¹¶è®¡ç®—äº†å®ƒä»¬ä¹‹é—´çš„æœ€å¤§ç»å¯¹å·®å¼‚ã€‚
 
-Èç¹ûÄãĞèÒª¸ü¾«È·µØÄ£·ÂMATLABµÄrcosdesignº¯ÊıµÄĞĞÎª£¬°üÀ¨ÄÜ¹»Éú³ÉÆ½·½¸ùÂË²¨Æ÷£¬Äã¿ÉÄÜĞèÒªĞŞ¸Ärrcosfilterº¯Êı»òÑ°ÕÒÒ»¸ö¸üÍêÕûµÄPython¿â£¬¸Ã¿âÌá¹©ÁËÓëMATLABµÄrcosdesignº¯Êı¸üÏàËÆµÄ¹¦ÄÜ¡£È»¶ø£¬¾Íµ±Ç°Ìá¹©µÄ´úÂë¶øÑÔ£¬ÉÏÊöÊ¾ÀıÒÑ¾­Âú×ãÁËÄãµÄÒªÇó¡£
+å¦‚æœä½ éœ€è¦æ›´ç²¾ç¡®åœ°æ¨¡ä»¿MATLABçš„rcosdesignå‡½æ•°çš„è¡Œä¸ºï¼ŒåŒ…æ‹¬èƒ½å¤Ÿç”Ÿæˆå¹³æ–¹æ ¹æ»¤æ³¢å™¨ï¼Œä½ å¯èƒ½éœ€è¦ä¿®æ”¹rrcosfilterå‡½æ•°æˆ–å¯»æ‰¾ä¸€ä¸ªæ›´å®Œæ•´çš„Pythonåº“ï¼Œè¯¥åº“æä¾›äº†ä¸MATLABçš„rcosdesignå‡½æ•°æ›´ç›¸ä¼¼çš„åŠŸèƒ½ã€‚ç„¶è€Œï¼Œå°±å½“å‰æä¾›çš„ä»£ç è€Œè¨€ï¼Œä¸Šè¿°ç¤ºä¾‹å·²ç»æ»¡è¶³äº†ä½ çš„è¦æ±‚ã€‚
 
-## Prompt 2 £º Ó¦ÓÃ Python rrcosfilter º¯ÊıÍê³É Matlab º¯ÊıÊ¾Àı¼ÆËãÉıÓàÏÒºÍÆ½·½¸ùÉıÓàÏÒÂË²¨Æ÷µÄÂö³åÏìÓ¦
+## Prompt 2 ï¼š åº”ç”¨ Python rrcosfilter å‡½æ•°å®Œæˆ Matlab å‡½æ•°ç¤ºä¾‹è®¡ç®—å‡ä½™å¼¦å’Œå¹³æ–¹æ ¹å‡ä½™å¼¦æ»¤æ³¢å™¨çš„è„‰å†²å“åº”
 
-²Î¿¼ÏÂÃæMATLAB´úÂërcosdesignº¯ÊıÀı×Ó£º
+å‚è€ƒä¸‹é¢MATLABä»£ç rcosdesignå‡½æ•°ä¾‹å­ï¼š
 ```
 rf = 0.25;
 span = 4;
@@ -330,7 +330,7 @@ ylabel("Normalized Amplitude")
 legend("h1","h2 * h2")
 ```
 
-²Î¿¼PythonÖĞ¿âcommpyµÄº¯Êı:rrcosfilter(N, alpha, Ts, Fs)£º
+å‚è€ƒPythonä¸­åº“commpyçš„å‡½æ•°:rrcosfilter(N, alpha, Ts, Fs)ï¼š
 
 def rrcosfilter(N, alpha, Ts, Fs):
     """
@@ -373,7 +373,7 @@ def rrcosfilter(N, alpha, Ts, Fs):
                     4*alpha*(t/Ts)*np.cos(np.pi*t*(1+alpha)/Ts))/ \
                     (np.pi*t*(1-(4*alpha*t/Ts)*(4*alpha*t/Ts))/Ts)
     return time_idx, h_rrc
-ºÍPythonÖĞ¿âcommpyµÄº¯Êı:rcosfilter(N, alpha, Ts, Fs)£º
+å’ŒPythonä¸­åº“commpyçš„å‡½æ•°:rcosfilter(N, alpha, Ts, Fs)ï¼š
 ```
 def rcosfilter(N, alpha, Ts, Fs):
     """
@@ -413,9 +413,9 @@ def rcosfilter(N, alpha, Ts, Fs):
                     (np.cos(np.pi*alpha*t/Ts)/(1-(((2*alpha*t)/Ts)*((2*alpha*t)/Ts))))
     return time_idx, h_rc
 ```
-ÇëÊ¹ÓÃPythonµÄcommpy¿âÖĞµÄrrcosfilterº¯ÊıºÍrcosfilterº¯Êı£¬Íê³ÉMatlabÈí¼şrcosdesignº¯ÊıµÄÊ¾Àı£¬Íê³ÉMATLABº¯ÊıÊ¾Àıµ½Python³ÌĞòÊ¾ÀıµÄ¶ÔÓ¦¡£
+è¯·ä½¿ç”¨Pythonçš„commpyåº“ä¸­çš„rrcosfilterå‡½æ•°å’Œrcosfilterå‡½æ•°ï¼Œå®ŒæˆMatlabè½¯ä»¶rcosdesignå‡½æ•°çš„ç¤ºä¾‹ï¼Œå®ŒæˆMATLABå‡½æ•°ç¤ºä¾‹åˆ°Pythonç¨‹åºç¤ºä¾‹çš„å¯¹åº”ã€‚
 
-### LLM Éú³É £º Python rrcosfilter ºÍ rcosfilter º¯ÊıÊ¾Àı
+### LLM ç”Ÿæˆ ï¼š Python rrcosfilter å’Œ rcosfilter å‡½æ•°ç¤ºä¾‹
 
 #### Python
 ```
@@ -456,11 +456,11 @@ plt.title("Raised Cosine (RC) Filter")
 plt.grid(True)
 plt.show()
 ```
-Õâ¶Î´úÂë½«Éú³ÉRoot Raised Cosine (RRC)ºÍRaised Cosine (RC)ÂË²¨Æ÷µÄ³å¼¤ÏìÓ¦£¬²¢»æÖÆËüÃÇµÄÍ¼ĞÎ£¬ÒÔÄ£ÄâMATLABÖĞrcosdesignº¯ÊıµÄÊ¾Àı¡£
+è¿™æ®µä»£ç å°†ç”ŸæˆRoot Raised Cosine (RRC)å’ŒRaised Cosine (RC)æ»¤æ³¢å™¨çš„å†²æ¿€å“åº”ï¼Œå¹¶ç»˜åˆ¶å®ƒä»¬çš„å›¾å½¢ï¼Œä»¥æ¨¡æ‹ŸMATLABä¸­rcosdesignå‡½æ•°çš„ç¤ºä¾‹ã€‚
 
-## Prompt 3 £º Ó¦ÓÃ Python rcosfilter º¯ÊıÍê³É Matlab º¯ÊıÊ¾ÀıÍ¨¹ıÉıÓàÏÒÂË²¨Æ÷´«µİĞÅºÅ
+## Prompt 3 ï¼š åº”ç”¨ Python rcosfilter å‡½æ•°å®Œæˆ Matlab å‡½æ•°ç¤ºä¾‹é€šè¿‡å‡ä½™å¼¦æ»¤æ³¢å™¨ä¼ é€’ä¿¡å·
 
-²Î¿¼ÏÂÃæMATLAB´úÂërcosdesignº¯ÊıÊ¾Àı£º
+å‚è€ƒä¸‹é¢MATLABä»£ç rcosdesignå‡½æ•°ç¤ºä¾‹ï¼š
 ```
 rolloff = 0.25;     % Rolloff factor
 span = 6;           % Filter span in symbols
@@ -470,10 +470,10 @@ d = 2*randi([0 1], 100, 1) - 1;
 x = upfirdn(d, b, sps);
 r = x + randn(size(x))*0.01;
 y = upfirdn(r, b, 1, sps);
-ÇëÊ¹ÓÃPythonµÄcommpy¿âÖĞµÄrrcosfilterº¯ÊıºÍrcosfilterº¯Êı£¬Íê³ÉMatlabÈí¼şrcosdesignº¯ÊıµÄÊ¾Àı£¬Íê³ÉMATLABº¯ÊıÊ¾Àıµ½Python³ÌĞòÊ¾ÀıµÄ¶ÔÓ¦¡£
+è¯·ä½¿ç”¨Pythonçš„commpyåº“ä¸­çš„rrcosfilterå‡½æ•°å’Œrcosfilterå‡½æ•°ï¼Œå®ŒæˆMatlabè½¯ä»¶rcosdesignå‡½æ•°çš„ç¤ºä¾‹ï¼Œå®ŒæˆMATLABå‡½æ•°ç¤ºä¾‹åˆ°Pythonç¨‹åºç¤ºä¾‹çš„å¯¹åº”ã€‚
 ```
 
-### LLM Éú³É £º Python rrcosfilter ºÍ rcosfilter º¯ÊıÊ¾Àı
+### LLM ç”Ÿæˆ ï¼š Python rrcosfilter å’Œ rcosfilter å‡½æ•°ç¤ºä¾‹
 
 ```
 import numpy as np
@@ -521,4 +521,4 @@ plt.grid(True)
 plt.show()
 ```
 
-Õâ¶Î´úÂëÄ£ÄâÁËMATLABÖĞrcosdesignº¯ÊıÊ¾ÀıµÄ¹¦ÄÜ£¬°üÀ¨Éú³ÉËæ»úÊı¾İ£¬Ê¹ÓÃRRCÂË²¨Æ÷½øĞĞÉÏ²ÉÑùºÍÂË²¨£¬Ìí¼ÓÔëÉù£¬ÔÙ´ÎÊ¹ÓÃRRCÂË²¨Æ÷½øĞĞÂË²¨£¬²¢»æÖÆÁËÔ­Ê¼ĞÅºÅºÍ½ÓÊÕĞÅºÅµÄÍ¼ĞÎ¡£
+è¿™æ®µä»£ç æ¨¡æ‹Ÿäº†MATLABä¸­rcosdesignå‡½æ•°ç¤ºä¾‹çš„åŠŸèƒ½ï¼ŒåŒ…æ‹¬ç”Ÿæˆéšæœºæ•°æ®ï¼Œä½¿ç”¨RRCæ»¤æ³¢å™¨è¿›è¡Œä¸Šé‡‡æ ·å’Œæ»¤æ³¢ï¼Œæ·»åŠ å™ªå£°ï¼Œå†æ¬¡ä½¿ç”¨RRCæ»¤æ³¢å™¨è¿›è¡Œæ»¤æ³¢ï¼Œå¹¶ç»˜åˆ¶äº†åŸå§‹ä¿¡å·å’Œæ¥æ”¶ä¿¡å·çš„å›¾å½¢ã€‚

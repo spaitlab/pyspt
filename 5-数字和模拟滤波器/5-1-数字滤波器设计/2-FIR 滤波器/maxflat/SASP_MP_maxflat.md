@@ -1,10 +1,10 @@
-# ÐÅºÅ´¦Àí·ÂÕæÓëÓ¦ÓÃ - Êý×ÖºÍÄ£ÄâÂË²¨Æ÷ - Êý×ÖÂË²¨Æ÷Éè¼Æ
+# ä¿¡å·å¤„ç†ä»¿çœŸä¸Žåº”ç”¨ - æ•°å­—å’Œæ¨¡æ‹Ÿæ»¤æ³¢å™¨ - æ•°å­—æ»¤æ³¢å™¨è®¾è®¡
 
-## MATLABº¯ÊýÃèÊö£ºmaxflat
+## MATLABå‡½æ•°æè¿°ï¼šmaxflat
 
-º¯ÊýÀ´Ô´£º[MATLAB maxflat](https://ww2.mathworks.cn/help/signal/ref/maxflat.html)
+å‡½æ•°æ¥æºï¼š[MATLAB maxflat](https://ww2.mathworks.cn/help/signal/ref/maxflat.html)
 
-### Óï·¨
+### è¯­æ³•
 
 [b,a] = maxflat(n,m,Wn)
 b = maxflat(n,'sym',Wn)
@@ -12,122 +12,122 @@ b = maxflat(n,'sym',Wn)
 [b,a,b1,b2,sos,g] = maxflat(n,m,Wn)
 [...] = maxflat(n,m,Wn,'design_flag')
 
-### ËµÃ÷
+### è¯´æ˜Ž
 
-[b,a] = maxflat(n,m,Wn) ·µ»Ø¾ßÓÐ¹éÒ»»¯½ØÖ¹ÆµÂÊ Wn µÄµÍÍ¨°ÍÌØÎÖË¹ÂË²¨Æ÷µÄµÚ n ½×·Ö×ÓÏµÊý b ºÍµÚ m ½×·ÖÄ¸ÏµÊý a¡£
+[b,a] = maxflat(n,m,Wn) è¿”å›žå…·æœ‰å½’ä¸€åŒ–æˆªæ­¢é¢‘çŽ‡ Wn çš„ä½Žé€šå·´ç‰¹æ²ƒæ–¯æ»¤æ³¢å™¨çš„ç¬¬ n é˜¶åˆ†å­ç³»æ•° b å’Œç¬¬ m é˜¶åˆ†æ¯ç³»æ•° aã€‚
 
-b = maxflat(n,'sym',Wn) ·µ»Ø¶Ô³Æ FIR °ÍÌØÎÖË¹ÂË²¨Æ÷µÄÏµÊý b¡£n ±ØÐëÊÇÅ¼Êý¡£
+b = maxflat(n,'sym',Wn) è¿”å›žå¯¹ç§° FIR å·´ç‰¹æ²ƒæ–¯æ»¤æ³¢å™¨çš„ç³»æ•° bã€‚n å¿…é¡»æ˜¯å¶æ•°ã€‚
 
-[b,a,b1,b2] = maxflat(n,m,Wn) ·µ»ØÁ½¸ö¶àÏîÊ½ b1 ºÍ b2£¬ËüÃÇµÄ³Ë»ýµÈÓÚ·Ö×Ó¶àÏîÊ½ b£¨¼´ b = conv(b1,b2)£©¡£
+[b,a,b1,b2] = maxflat(n,m,Wn) è¿”å›žä¸¤ä¸ªå¤šé¡¹å¼ b1 å’Œ b2ï¼Œå®ƒä»¬çš„ä¹˜ç§¯ç­‰äºŽåˆ†å­å¤šé¡¹å¼ bï¼ˆå³ b = conv(b1,b2)ï¼‰ã€‚
 
-[b,a,b1,b2,sos,g] = maxflat(n,m,Wn) ·µ»ØÂË²¨Æ÷µÄ¶þ½×²¿·Ö±íÊ¾×÷ÎªÂË²¨Æ÷¾ØÕó sos ºÍÔöÒæ g¡£
+[b,a,b1,b2,sos,g] = maxflat(n,m,Wn) è¿”å›žæ»¤æ³¢å™¨çš„äºŒé˜¶éƒ¨åˆ†è¡¨ç¤ºä½œä¸ºæ»¤æ³¢å™¨çŸ©é˜µ sos å’Œå¢žç›Š gã€‚
 
-[...] = maxflat(n,m,Wn,'designflag') Ê¹ÓÃ designflag Ö¸¶¨½«ÂË²¨Æ÷Éè¼ÆÏÔÊ¾Îª±í¸ñ¡¢Í¼ÐÎ»òÁ½Õß¡£Äú¿ÉÒÔÊ¹ÓÃÇ°ÃæÓï·¨ÖÐµÄÈÎºÎÊä³ö×éºÏ¡£
+[...] = maxflat(n,m,Wn,'designflag') ä½¿ç”¨ designflag æŒ‡å®šå°†æ»¤æ³¢å™¨è®¾è®¡æ˜¾ç¤ºä¸ºè¡¨æ ¼ã€å›¾å½¢æˆ–ä¸¤è€…ã€‚æ‚¨å¯ä»¥ä½¿ç”¨å‰é¢è¯­æ³•ä¸­çš„ä»»ä½•è¾“å‡ºç»„åˆã€‚
 
-### ÊäÈë²ÎÊý
+### è¾“å…¥å‚æ•°
 
-n ¡ª ·Ö×ÓÏµÊý½×
-Êµ¡¢Õý±êÁ¿
-·Ö×ÓÏµÊý½×£¬Ö¸¶¨ÎªÊµÕýµÄ±êÁ¿
-Êý¾ÝÀàÐÍ: single | double
+n â€” åˆ†å­ç³»æ•°é˜¶
+å®žã€æ­£æ ‡é‡
+åˆ†å­ç³»æ•°é˜¶ï¼ŒæŒ‡å®šä¸ºå®žæ­£çš„æ ‡é‡
+æ•°æ®ç±»åž‹: single | double
 
-m ¡ª ·ÖÄ¸ÏµÊý½×
-Êµ¡¢Õý±êÁ¿
-·Ö×ÓÏµÊý½×£¬Ö¸¶¨ÎªÊµÕýµÄ±êÁ¿
-Êý¾ÝÀàÐÍ: single | double
+m â€” åˆ†æ¯ç³»æ•°é˜¶
+å®žã€æ­£æ ‡é‡
+åˆ†å­ç³»æ•°é˜¶ï¼ŒæŒ‡å®šä¸ºå®žæ­£çš„æ ‡é‡
+æ•°æ®ç±»åž‹: single | double
 
-Wn ¡ª  ¹éÒ»»¯½ØÖ¹ÆµÂÊ
-[0,1]·¶Î§ÄÚµÄ±êÁ¿
-ÂË²¨Æ÷µÄ·ùÖµÏìÓ¦µÈÓÚ1/¡Ì2µÄ¹éÒ»»¯½ØÖ¹ÆµÂÊ£¬±íÊ¾Îª[0,1]·¶Î§ÄÚµÄ±êÁ¿£¬ÆäÖÐ1¶ÔÓ¦ÄÎ¿üË¹ÌØÆµÂÊ¡£
-Êý¾ÝÀàÐÍ: single | double
+Wn â€”  å½’ä¸€åŒ–æˆªæ­¢é¢‘çŽ‡
+[0,1]èŒƒå›´å†…çš„æ ‡é‡
+æ»¤æ³¢å™¨çš„å¹…å€¼å“åº”ç­‰äºŽ1/âˆš2çš„å½’ä¸€åŒ–æˆªæ­¢é¢‘çŽ‡ï¼Œè¡¨ç¤ºä¸º[0,1]èŒƒå›´å†…çš„æ ‡é‡ï¼Œå…¶ä¸­1å¯¹åº”å¥ˆå¥Žæ–¯ç‰¹é¢‘çŽ‡ã€‚
+æ•°æ®ç±»åž‹: single | double
 
-designflag ¡ª ÂË²¨Æ÷Éè¼ÆÕ¹Ê¾
+designflag â€” æ»¤æ³¢å™¨è®¾è®¡å±•ç¤º
 'trace' | 'plots' | 'both'
-¹ýÂËÆ÷Éè¼ÆÏÔÊ¾£¬Ö¸¶¨ÎªÒÔÏÂÖµÖ®Ò»:
-'trace'ÓÃÓÚÔÚÉè¼ÆÖÐÊ¹ÓÃµÄÉè¼Æ±íµÄÎÄ±¾ÏÔÊ¾
-¡°plots¡±±íÊ¾ÂË²¨Æ÷·ù¶È¡¢ÈºÑÓ³Ù¡¢ÁãµãºÍ¼«µãµÄÍ¼
-'both'±íÊ¾ÎÄ±¾ÏÔÊ¾ºÍ»­Í¼
+è¿‡æ»¤å™¨è®¾è®¡æ˜¾ç¤ºï¼ŒæŒ‡å®šä¸ºä»¥ä¸‹å€¼ä¹‹ä¸€:
+'trace'ç”¨äºŽåœ¨è®¾è®¡ä¸­ä½¿ç”¨çš„è®¾è®¡è¡¨çš„æ–‡æœ¬æ˜¾ç¤º
+â€œplotsâ€è¡¨ç¤ºæ»¤æ³¢å™¨å¹…åº¦ã€ç¾¤å»¶è¿Ÿã€é›¶ç‚¹å’Œæžç‚¹çš„å›¾
+'both'è¡¨ç¤ºæ–‡æœ¬æ˜¾ç¤ºå’Œç”»å›¾
 
 
-### Êä³ö²ÎÁ¿
+### è¾“å‡ºå‚é‡
 
-b ¡ª ·Ö×ÓÏµÊý
-ÏòÁ¿
-·Ö×ÓÏµÊý£¬ÒÔÏòÁ¿ÐÎÊ½·µ»Ø¡£
+b â€” åˆ†å­ç³»æ•°
+å‘é‡
+åˆ†å­ç³»æ•°ï¼Œä»¥å‘é‡å½¢å¼è¿”å›žã€‚
 
-a ¡ª ·ÖÄ¸ÏµÊý
-ÏòÁ¿
-·ÖÄ¸ÏµÊý£¬ÒÔÏòÁ¿ÐÎÊ½·µ»Ø¡£
+a â€” åˆ†æ¯ç³»æ•°
+å‘é‡
+åˆ†æ¯ç³»æ•°ï¼Œä»¥å‘é‡å½¢å¼è¿”å›žã€‚
 
-b1,b2 -¶àÏîÊ½
-ÏòÁ¿
-×÷ÎªÏòÁ¿·µ»ØµÄ¶àÏîÊ½¡£b1ºÍb2µÄ³Ë»ýµÈÓÚ·Ö×Ó¶àÏîÊ½b, b1°üº¬z = -1´¦ËùÓÐµÄ0,b2°üº¬ÆäËûËùÓÐµÄ0¡£
+b1,b2 -å¤šé¡¹å¼
+å‘é‡
+ä½œä¸ºå‘é‡è¿”å›žçš„å¤šé¡¹å¼ã€‚b1å’Œb2çš„ä¹˜ç§¯ç­‰äºŽåˆ†å­å¤šé¡¹å¼b, b1åŒ…å«z = -1å¤„æ‰€æœ‰çš„0,b2åŒ…å«å…¶ä»–æ‰€æœ‰çš„0ã€‚
 
-sos ¡ª ¶þ½×½ØÃæÏµÊý
-¾ØÕó
-¶þ½×½ØÃæÏµÊý£¬ÒÔ¾ØÕóÐÎÊ½·µ»Ø¡£
+sos â€” äºŒé˜¶æˆªé¢ç³»æ•°
+çŸ©é˜µ
+äºŒé˜¶æˆªé¢ç³»æ•°ï¼Œä»¥çŸ©é˜µå½¢å¼è¿”å›žã€‚
 
-g ¡ª ÔöÒæ
-ÊµÖµ±êÁ¿
-ÂË²¨Æ÷µÄÔöÒæ£¬×÷ÎªÊµÖµ±êÁ¿·µ»Ø¡£
-## Pythonº¯ÊýÃèÊö£ºbutter
+g â€” å¢žç›Š
+å®žå€¼æ ‡é‡
+æ»¤æ³¢å™¨çš„å¢žç›Šï¼Œä½œä¸ºå®žå€¼æ ‡é‡è¿”å›žã€‚
+## Pythonå‡½æ•°æè¿°ï¼šbutter
 
-º¯ÊýÀ´Ô´£º[scipy.signal.butter](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.butter.html)
+å‡½æ•°æ¥æºï¼š[scipy.signal.butter](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.butter.html)
 
-### Óï·¨
+### è¯­æ³•
 
 scipy.signal.butter(N, Wn, btype='low', analog=False, output='ba', fs=None)
 
-°ÍÌØÎÖË¹Êý×ÖºÍÄ£ÄâÂË²¨Æ÷Éè¼Æ¡£
-Éè¼ÆÒ»¸ön½×Êý×Ö(»òÄ£Äâ)°ÍÌØÎÖË¹ÂË²¨Æ÷²¢·µ»ØÂË²¨Æ÷ÏµÊý¡£
+å·´ç‰¹æ²ƒæ–¯æ•°å­—å’Œæ¨¡æ‹Ÿæ»¤æ³¢å™¨è®¾è®¡ã€‚
+è®¾è®¡ä¸€ä¸ªné˜¶æ•°å­—(æˆ–æ¨¡æ‹Ÿ)å·´ç‰¹æ²ƒæ–¯æ»¤æ³¢å™¨å¹¶è¿”å›žæ»¤æ³¢å™¨ç³»æ•°ã€‚
 
-### ²ÎÊý
+### å‚æ•°
 
 - `N`: int
-- ¶ÔÓÚ¡°´øÍ¨¡±ºÍ¡°´ø×è¡±ÂË²¨Æ÷£¬×îÖÕ¶þ½×²¿·Ö£¨'sos'£©¾ØÕóµÄ½×ÊýÊÇ2*N£¬ÆäÖÐNÊÇËùÐèÏµÍ³µÄË«¶þ´Î£¨biquad£©²¿·ÖµÄÊýÁ¿¡£
+- å¯¹äºŽâ€œå¸¦é€šâ€å’Œâ€œå¸¦é˜»â€æ»¤æ³¢å™¨ï¼Œæœ€ç»ˆäºŒé˜¶éƒ¨åˆ†ï¼ˆ'sos'ï¼‰çŸ©é˜µçš„é˜¶æ•°æ˜¯2*Nï¼Œå…¶ä¸­Næ˜¯æ‰€éœ€ç³»ç»Ÿçš„åŒäºŒæ¬¡ï¼ˆbiquadï¼‰éƒ¨åˆ†çš„æ•°é‡ã€‚
 
 - `Wn`: array_like
-- ÁÙ½çÆµÂÊ¡£¶ÔÓÚµÍÍ¨ºÍ¸ßÍ¨ÂË²¨Æ÷£¬WnÊÇÒ»¸ö±êÁ¿;¶ÔÓÚ´øÍ¨ºÍ´ø×èÂË²¨Æ÷£¬WnÊÇ³¤¶ÈÎª2µÄÐòÁÐ¡£
+- ä¸´ç•Œé¢‘çŽ‡ã€‚å¯¹äºŽä½Žé€šå’Œé«˜é€šæ»¤æ³¢å™¨ï¼ŒWnæ˜¯ä¸€ä¸ªæ ‡é‡;å¯¹äºŽå¸¦é€šå’Œå¸¦é˜»æ»¤æ³¢å™¨ï¼ŒWnæ˜¯é•¿åº¦ä¸º2çš„åºåˆ—ã€‚
 
-¶ÔÓÚ°ÍÌØÎÖË¹ÂË²¨Æ÷£¬ÕâÊÇÔöÒæÏÂ½µµ½Í¨´øµÄ1/¡Ì(2)µÄµã(¡°-3 dBµã¡±)¡£
+å¯¹äºŽå·´ç‰¹æ²ƒæ–¯æ»¤æ³¢å™¨ï¼Œè¿™æ˜¯å¢žç›Šä¸‹é™åˆ°é€šå¸¦çš„1/âˆš(2)çš„ç‚¹(â€œ-3 dBç‚¹â€)ã€‚
 
-¶ÔÓÚÊý×ÖÂË²¨Æ÷£¬Èç¹û²»Ö¸¶¨fs£¬Ôò½«Wnµ¥Î»´Ó0¹éÒ»»¯Îª1£¬ÆäÖÐ1ÎªÄÎ¿üË¹ÌØÆµÂÊ(Òò´ËWnÎª°ëÖÜÆÚ/²ÉÑù£¬¶¨ÒåÎª2*ÁÙ½çÆµÂÊ/ fs)¡£Èç¹ûÖ¸¶¨ÁËfs£¬ÔòWnµÄµ¥Î»ÓëfsÏàÍ¬¡£
+å¯¹äºŽæ•°å­—æ»¤æ³¢å™¨ï¼Œå¦‚æžœä¸æŒ‡å®šfsï¼Œåˆ™å°†Wnå•ä½ä»Ž0å½’ä¸€åŒ–ä¸º1ï¼Œå…¶ä¸­1ä¸ºå¥ˆå¥Žæ–¯ç‰¹é¢‘çŽ‡(å› æ­¤Wnä¸ºåŠå‘¨æœŸ/é‡‡æ ·ï¼Œå®šä¹‰ä¸º2*ä¸´ç•Œé¢‘çŽ‡/ fs)ã€‚å¦‚æžœæŒ‡å®šäº†fsï¼Œåˆ™Wnçš„å•ä½ä¸Žfsç›¸åŒã€‚
 
-- `btype`: {¡®lowpass¡¯, ¡®highpass¡¯, ¡®bandpass¡¯, ¡®bandstop¡¯}, ¿ÉÑ¡ÔñµÄ
-- ÂË²¨Æ÷µÄÀàÐÍ¡£Ä¬ÈÏÎª¡°µÍÍ¨¡±
+- `btype`: {â€˜lowpassâ€™, â€˜highpassâ€™, â€˜bandpassâ€™, â€˜bandstopâ€™}, å¯é€‰æ‹©çš„
+- æ»¤æ³¢å™¨çš„ç±»åž‹ã€‚é»˜è®¤ä¸ºâ€œä½Žé€šâ€
   
-- `analog`: bool, ¿ÉÑ¡ÔñµÄ
-- µ±ÎªTrueÊ±£¬·µ»ØÄ£ÄâÂË²¨Æ÷£¬·ñÔò·µ»ØÊý×ÖÂË²¨Æ÷¡£
+- `analog`: bool, å¯é€‰æ‹©çš„
+- å½“ä¸ºTrueæ—¶ï¼Œè¿”å›žæ¨¡æ‹Ÿæ»¤æ³¢å™¨ï¼Œå¦åˆ™è¿”å›žæ•°å­—æ»¤æ³¢å™¨ã€‚
    
-- `output`: {¡®ba¡¯, ¡®zpk¡¯, ¡®sos¡¯}, ¿ÉÑ¡ÔñµÄ
-- Êä³öÀàÐÍ:·Ö×Ó/·ÖÄ¸('ba')£¬¼«Áã('zpk')»ò¶þ½×²¿·Ö('sos')¡£Ä¬ÈÏÎª'ba'ÓÃÓÚÏòºó¼æÈÝ£¬µ«'sos'Ó¦ÓÃÓÚÍ¨ÓÃÂË²¨¡£
+- `output`: {â€˜baâ€™, â€˜zpkâ€™, â€˜sosâ€™}, å¯é€‰æ‹©çš„
+- è¾“å‡ºç±»åž‹:åˆ†å­/åˆ†æ¯('ba')ï¼Œæžé›¶('zpk')æˆ–äºŒé˜¶éƒ¨åˆ†('sos')ã€‚é»˜è®¤ä¸º'ba'ç”¨äºŽå‘åŽå…¼å®¹ï¼Œä½†'sos'åº”ç”¨äºŽé€šç”¨æ»¤æ³¢ã€‚
    
-- `fs`: float, ¿ÉÑ¡ÔñµÄ
-- Êý×ÖÏµÍ³µÄ²ÉÑùÆµÂÊ¡£
+- `fs`: float, å¯é€‰æ‹©çš„
+- æ•°å­—ç³»ç»Ÿçš„é‡‡æ ·é¢‘çŽ‡ã€‚
   
-### ·µ»ØÖµ
+### è¿”å›žå€¼
 
 - `b, a`: ndarray, ndarray
-- IIRÂË²¨Æ÷µÄ·Ö×Ó(b)ºÍ·ÖÄ¸(a)¶àÏîÊ½¡£½öµ±output='ba'Ê±·µ»Ø¡£
+- IIRæ»¤æ³¢å™¨çš„åˆ†å­(b)å’Œåˆ†æ¯(a)å¤šé¡¹å¼ã€‚ä»…å½“output='ba'æ—¶è¿”å›žã€‚
 - `z, p, k`: ndarray, ndarray, float
-- Áãµã¡¢¼«µãºÍIIRÂË²¨Æ÷´«µÝº¯ÊýµÄÏµÍ³ÔöÒæ¡£½öµ±output='zpk'Ê±·µ»Ø¡£
+- é›¶ç‚¹ã€æžç‚¹å’ŒIIRæ»¤æ³¢å™¨ä¼ é€’å‡½æ•°çš„ç³»ç»Ÿå¢žç›Šã€‚ä»…å½“output='zpk'æ—¶è¿”å›žã€‚
 - `sos`: ndarray
-- IIRÂË²¨Æ÷µÄ¶þ½×½ØÃæ±íÊ¾¡£½öµ±output='sos'Ê±·µ»Ø¡£
+- IIRæ»¤æ³¢å™¨çš„äºŒé˜¶æˆªé¢è¡¨ç¤ºã€‚ä»…å½“output='sos'æ—¶è¿”å›žã€‚
 
-### ×¢ÒâÊÂÏî
-- °ÍÌØÎÖË¹ÂË²¨Æ÷ÔÚÍ¨´øÄÚ¾ßÓÐ×î´óµÄÆ½Ì¹ÆµÂÊÏìÓ¦¡£
+### æ³¨æ„äº‹é¡¹
+- å·´ç‰¹æ²ƒæ–¯æ»¤æ³¢å™¨åœ¨é€šå¸¦å†…å…·æœ‰æœ€å¤§çš„å¹³å¦é¢‘çŽ‡å“åº”ã€‚
   
-- 'sos'Êä³ö²ÎÊýÔÚ0.16.0ÖÐÌí¼Ó¡£
+- 'sos'è¾“å‡ºå‚æ•°åœ¨0.16.0ä¸­æ·»åŠ ã€‚
   
-- Èç¹ûÒªÇó´«µÝº¯ÊýÐÎÊ½[b, a]£¬Ôò»á³öÏÖÊýÖµÎÊÌâ£¬ÒòÎª¸ùÓë¶àÏîÊ½ÏµÊýÖ®¼äµÄ×ª»»ÊÇÊýÖµÃô¸ÐµÄ²Ù×÷£¬¼´Ê¹N >= 4Ò²ÊÇÈç´Ë¡£½¨ÒéÊ¹ÓÃSOS±íÊ¾¡£
+- å¦‚æžœè¦æ±‚ä¼ é€’å‡½æ•°å½¢å¼[b, a]ï¼Œåˆ™ä¼šå‡ºçŽ°æ•°å€¼é—®é¢˜ï¼Œå› ä¸ºæ ¹ä¸Žå¤šé¡¹å¼ç³»æ•°ä¹‹é—´çš„è½¬æ¢æ˜¯æ•°å€¼æ•æ„Ÿçš„æ“ä½œï¼Œå³ä½¿N >= 4ä¹Ÿæ˜¯å¦‚æ­¤ã€‚å»ºè®®ä½¿ç”¨SOSè¡¨ç¤ºã€‚
 
-### ¾¯¸æ
+### è­¦å‘Š
 
-- ÒÔTFÐÎÊ½Éè¼Æ¸ß½×ºÍÕ­´øIIRÂË²¨Æ÷¿ÉÄÜ»áÓÉÓÚ¸¡µãÊýÖµ¾«¶ÈÎÊÌâ¶øµ¼ÖÂÂË²¨²»ÎÈ¶¨»ò²»ÕýÈ·¡£¿¼ÂÇ¼ì²éÊä³öÂË²¨Æ÷ÌØÐÔÆµÂÊ'freqz'£¬»òÍ¨¹ýoutput='sos'Éè¼Æ¾ßÓÐ¶þ½×²¿·ÖµÄÂË²¨Æ÷¡£
+- ä»¥TFå½¢å¼è®¾è®¡é«˜é˜¶å’Œçª„å¸¦IIRæ»¤æ³¢å™¨å¯èƒ½ä¼šç”±äºŽæµ®ç‚¹æ•°å€¼ç²¾åº¦é—®é¢˜è€Œå¯¼è‡´æ»¤æ³¢ä¸ç¨³å®šæˆ–ä¸æ­£ç¡®ã€‚è€ƒè™‘æ£€æŸ¥è¾“å‡ºæ»¤æ³¢å™¨ç‰¹æ€§é¢‘çŽ‡'freqz'ï¼Œæˆ–é€šè¿‡output='sos'è®¾è®¡å…·æœ‰äºŒé˜¶éƒ¨åˆ†çš„æ»¤æ³¢å™¨ã€‚
 
-## Prompt 1 £º Ó¦ÓÃ Python butter º¯ÊýÍê³É Matlab º¯ÊýÊ¾Àýµ½ Python µÄ¶ÔÓ¦
+## Prompt 1 ï¼š åº”ç”¨ Python butter å‡½æ•°å®Œæˆ Matlab å‡½æ•°ç¤ºä¾‹åˆ° Python çš„å¯¹åº”
 
-²Î¿¼ÏÂÃæMATLAB´úÂëmaxflatº¯ÊýÀý×Ó£º
+å‚è€ƒä¸‹é¢MATLABä»£ç maxflatå‡½æ•°ä¾‹å­ï¼š
 ```
 n = 10;
 m = 2;
@@ -137,7 +137,7 @@ Wn = 0.2;
 fvtool(b,a)
 ```
 
-ºÍPythonÖÐµÄº¯ÊýbutterÔ´Âë£º
+å’ŒPythonä¸­çš„å‡½æ•°butteræºç ï¼š
 ```
 def butter(N, Wn, btype='low', analog=False, output='ba', fs=None):
     """
@@ -263,9 +263,9 @@ def butter(N, Wn, btype='low', analog=False, output='ba', fs=None):
     return iirfilter(N, Wn, btype=btype, analog=analog,
                      output=output, ftype='butter', fs=fs)
 ```
-ÇëÊ¹ÓÃPythonµÄbutterº¯Êý£¬Íê³ÉMatlabÈí¼þmaxflatº¯ÊýµÄÊ¾Àý£¬Íê³ÉMATLABº¯ÊýÊ¾Àýµ½Python³ÌÐòÊ¾ÀýµÄ¶ÔÓ¦¡£
+è¯·ä½¿ç”¨Pythonçš„butterå‡½æ•°ï¼Œå®ŒæˆMatlabè½¯ä»¶maxflatå‡½æ•°çš„ç¤ºä¾‹ï¼Œå®ŒæˆMATLABå‡½æ•°ç¤ºä¾‹åˆ°Pythonç¨‹åºç¤ºä¾‹çš„å¯¹åº”ã€‚
 
-### LLM Éú³É £º Python butter º¯ÊýÊ¾Àý
+### LLM ç”Ÿæˆ ï¼š Python butter å‡½æ•°ç¤ºä¾‹
 
 #### Python
 	import numpy as np  
@@ -276,53 +276,53 @@ def butter(N, Wn, btype='low', analog=False, output='ba', fs=None):
 
 	  
 
-	# ÂË²¨Æ÷½×Êý£¬×¢Òâ¶ÔÓÚ×î´óÆ½Ì¹µÄ°ÍÌØÎÖË¹ÂË²¨Æ÷£¬NÓ¦ÎªÅ¼Êý  
+	# æ»¤æ³¢å™¨é˜¶æ•°ï¼Œæ³¨æ„å¯¹äºŽæœ€å¤§å¹³å¦çš„å·´ç‰¹æ²ƒæ–¯æ»¤æ³¢å™¨ï¼ŒNåº”ä¸ºå¶æ•°  
 
 	N = 10  
 
 	  
 
-	# ÂË²¨Æ÷ÀàÐÍ£º'low', 'high', 'band', 'stop'  
+	# æ»¤æ³¢å™¨ç±»åž‹ï¼š'low', 'high', 'band', 'stop'  
 
-	btype = 'low'  # ¶ÔÓ¦MATLABÖÐm=1µÄÇé¿ö  
+	btype = 'low'  # å¯¹åº”MATLABä¸­m=1çš„æƒ…å†µ  
 
 	  
 
-	# ¹éÒ»»¯½ØÖ¹ÆµÂÊ£¨¶ÔÓÚÊý×ÖÂË²¨Æ÷£©  
+	# å½’ä¸€åŒ–æˆªæ­¢é¢‘çŽ‡ï¼ˆå¯¹äºŽæ•°å­—æ»¤æ³¢å™¨ï¼‰  
 
-	# WnÊÇÏà¶ÔÓÚ²ÉÑùÆµÂÊfsµÄÒ»°ëµÄ±ÈÀý  
+	# Wnæ˜¯ç›¸å¯¹äºŽé‡‡æ ·é¢‘çŽ‡fsçš„ä¸€åŠçš„æ¯”ä¾‹  
 
-	# ¼ÙÉè²ÉÑùÆµÂÊÎª1£¨¹éÒ»»¯ÆµÂÊ£©£¬ÔòÖ±½ÓÊ¹ÓÃWnµÄÖµ  
+	# å‡è®¾é‡‡æ ·é¢‘çŽ‡ä¸º1ï¼ˆå½’ä¸€åŒ–é¢‘çŽ‡ï¼‰ï¼Œåˆ™ç›´æŽ¥ä½¿ç”¨Wnçš„å€¼  
 
 	Wn = 0.2  
 
 	  
 
-	# Ê¹ÓÃbutterº¯ÊýÉè¼Æ°ÍÌØÎÖË¹ÂË²¨Æ÷  
+	# ä½¿ç”¨butterå‡½æ•°è®¾è®¡å·´ç‰¹æ²ƒæ–¯æ»¤æ³¢å™¨  
 
 	b, a = butter(N, Wn, btype=btype)  
 
 	  
 
-	# ¼ÆËãÆµÂÊÏìÓ¦  
+	# è®¡ç®—é¢‘çŽ‡å“åº”  
 
 	w, h = freqz(b, a)  
 
 	  
 
-	# »æÖÆÆµÂÊÏìÓ¦Í¼  
+	# ç»˜åˆ¶é¢‘çŽ‡å“åº”å›¾  
 
 	plt.figure()  
 
-	plt.plot(w/np.pi, np.abs(h), 'b')     # ·ù¶ÈÏìÓ¦  
+	plt.plot(w/np.pi, np.abs(h), 'b')     # å¹…åº¦å“åº”  
 
-	plt.plot(w/np.pi, 20*np.log10(np.abs(h)), 'r') # ¶ÔÊý·ù¶ÈÏìÓ¦  
+	plt.plot(w/np.pi, 20*np.log10(np.abs(h)), 'r') # å¯¹æ•°å¹…åº¦å“åº”  
 
 	plt.ylim(-150, 5)  
 
 	plt.grid(True)  
 
-	plt.xlabel('Normalized frequency (x¦Ðrad/sample)')  
+	plt.xlabel('Normalized frequency (xÏ€rad/sample)')  
 
 	plt.ylabel('Magnitude')  
 
@@ -330,6 +330,6 @@ def butter(N, Wn, btype='low', analog=False, output='ba', fs=None):
 
 	plt.show()
 
-ÔÚPython´úÂëÖÐ£¬ÎÒÃÇÊ×ÏÈµ¼ÈëÁË±ØÒªµÄ¿â£¬È»ºó¶¨ÒåÁËÂË²¨Æ÷µÄ½×ÊýN¡¢ÀàÐÍbtypeºÍ¹éÒ»»¯½ØÖ¹ÆµÂÊWn¡£ÎÒÃÇÊ¹ÓÃbutterº¯ÊýÉè¼ÆÁË°ÍÌØÎÖË¹ÂË²¨Æ÷£¬²¢µÃµ½ÁËÂË²¨Æ÷µÄ·Ö×ÓÏµÊýbºÍ·ÖÄ¸ÏµÊýa¡£È»ºó£¬ÎÒÃÇÊ¹ÓÃfreqzº¯Êý¼ÆËãÁËÂË²¨Æ÷µÄÆµÂÊÏìÓ¦£¬²¢»æÖÆÁË·ù¶ÈÏìÓ¦ºÍ¶ÔÊý·ù¶ÈÏìÓ¦Í¼¡£
+åœ¨Pythonä»£ç ä¸­ï¼Œæˆ‘ä»¬é¦–å…ˆå¯¼å…¥äº†å¿…è¦çš„åº“ï¼Œç„¶åŽå®šä¹‰äº†æ»¤æ³¢å™¨çš„é˜¶æ•°Nã€ç±»åž‹btypeå’Œå½’ä¸€åŒ–æˆªæ­¢é¢‘çŽ‡Wnã€‚æˆ‘ä»¬ä½¿ç”¨butterå‡½æ•°è®¾è®¡äº†å·´ç‰¹æ²ƒæ–¯æ»¤æ³¢å™¨ï¼Œå¹¶å¾—åˆ°äº†æ»¤æ³¢å™¨çš„åˆ†å­ç³»æ•°bå’Œåˆ†æ¯ç³»æ•°aã€‚ç„¶åŽï¼Œæˆ‘ä»¬ä½¿ç”¨freqzå‡½æ•°è®¡ç®—äº†æ»¤æ³¢å™¨çš„é¢‘çŽ‡å“åº”ï¼Œå¹¶ç»˜åˆ¶äº†å¹…åº¦å“åº”å’Œå¯¹æ•°å¹…åº¦å“åº”å›¾ã€‚
 
-ÐèÒª×¢ÒâµÄÊÇ£¬MATLABµÄmaxflatº¯ÊýºÍPythonµÄbutterº¯ÊýÔÚ²ÎÊýºÍÄ¬ÈÏÐÐÎªÉÏÂÔÓÐ²»Í¬£¬Òò´ËÔÚÊµ¼ÊÓ¦ÓÃÖÐ¿ÉÄÜÐèÒª¸ù¾Ý¾ßÌåÇé¿öµ÷Õû²ÎÊýÒÔµÃµ½ÆÚÍûµÄÂË²¨Æ÷ÌØÐÔ¡£´ËÍâ£¬ÓÉÓÚMATLABºÍPythonÔÚ»æÍ¼·½ÃæÓÐËù²»Í¬£¬Òò´Ë»æÍ¼´úÂëÒ²»áÓÐËù²îÒì¡£ÔÚPythonÖÐ£¬ÎÒÃÇÊ¹ÓÃmatplotlib¿âÀ´»æÖÆÍ¼ÐÎ¡£
+éœ€è¦æ³¨æ„çš„æ˜¯ï¼ŒMATLABçš„maxflatå‡½æ•°å’ŒPythonçš„butterå‡½æ•°åœ¨å‚æ•°å’Œé»˜è®¤è¡Œä¸ºä¸Šç•¥æœ‰ä¸åŒï¼Œå› æ­¤åœ¨å®žé™…åº”ç”¨ä¸­å¯èƒ½éœ€è¦æ ¹æ®å…·ä½“æƒ…å†µè°ƒæ•´å‚æ•°ä»¥å¾—åˆ°æœŸæœ›çš„æ»¤æ³¢å™¨ç‰¹æ€§ã€‚æ­¤å¤–ï¼Œç”±äºŽMATLABå’ŒPythonåœ¨ç»˜å›¾æ–¹é¢æœ‰æ‰€ä¸åŒï¼Œå› æ­¤ç»˜å›¾ä»£ç ä¹Ÿä¼šæœ‰æ‰€å·®å¼‚ã€‚åœ¨Pythonä¸­ï¼Œæˆ‘ä»¬ä½¿ç”¨matplotlibåº“æ¥ç»˜åˆ¶å›¾å½¢ã€‚
