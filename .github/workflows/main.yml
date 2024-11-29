@@ -1,0 +1,24 @@
+“`
+name: Refresh GitHub Pages
+on:
+  push:
+    branches:
+      – main  # 更新分支名称
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      – name: Refresh GitHub Pages
+        uses: actions/checkout@v2
+      – name: Refresh GitHub Pages
+        run: |
+          git config –global user.name “GitHub Action”
+          git config –global user.email “action@github.com”
+          git checkout –orphan tempBranch
+          git commit -m “Refresh GitHub Pages” –allow-empty
+          git push origin tempBranch -f
+          git checkout -f main
+          git branch -D tempBranch
+“`
